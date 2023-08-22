@@ -64,4 +64,14 @@ public class Account {
     public void depozit(double iznos) {
         balance += iznos;
     }
+
+    @Override
+    public String toString() {
+        return "Id : " + id +
+                "\nBalance : " + balance +
+                "\nGodisnja kamatna stopa : " + godisnjaKamatnaStopa +
+                "\nVrijeme kreiranja racuna : " + getDateCreated().toString();
+    }
 }
+
+
